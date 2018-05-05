@@ -1,0 +1,17 @@
+{
+  "name": "homeauto",
+  "version": "0.0.0",
+  "description": "Home Automation using Node JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anish G",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "onoff": "^1.1.9",
+    "cors": "",
+    "localtunnel": ""
+  }
+}

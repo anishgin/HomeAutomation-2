@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Mukta+Malar:30');
+.onoffswitch {
+    position: absolute; 
+	width: 97px; 
+	display: inline-block; 
+	margin-top: 66px;
+	margin-left: 15px;
+    -webkit-user-select:none; 
+	-moz-user-select:none; 
+	-ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    height: 38px; padding: 0; line-height: 38px;
+    border: 2px solid #E3E3E3; border-radius: 38px;
+    background-color: #E66C6C;
+    transition: background-color 0.3s ease-in;
+}
+.onoffswitch-label:before {
+    content: "";
+    display: block; width: 38px; margin: 0px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 57px;
+    border: 2px solid #E3E3E3; border-radius: 38px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label {
+    background-color: #49E845;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label, .onoffswitch-checkbox:checked + .onoffswitch-label:before {
+   border-color: #49E845;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label:before {
+    right: 0px; 
+}
+.onoffswitch-checkbox:disabled + .onoffswitch-label:before {
+    content: "ERR";
+    display: block; width: 38px; margin: 0px;
+    background: #F11F0A; 
+}
+
+.whole {
+    padding: 65px 50px 75px 80px;
+	overflow: hidden; 
+}
+
+.thediv{ margin-right:20%;}
